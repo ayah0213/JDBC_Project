@@ -36,6 +36,7 @@ It also maintain a cursor to point to the row so data at that location can be ac
         try {
             Connection con = DriverManager.getConnection(URL, "hr", "hr");
             System.out.println("Connection successfull");
+            con.close();
 
         } catch (
                 SQLException e) {

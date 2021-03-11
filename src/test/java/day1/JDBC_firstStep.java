@@ -42,6 +42,9 @@ public class JDBC_firstStep {
             System.out.println("FOURTH ROW REGION_NAME is " + rs.getString("REGION_NAME"));
 
             System.out.println("Connection successfull");
+            rs.close();
+            stmnt.close();
+            con.close();
 
         } catch (SQLException e) {
             System.out.println("Connection failed" + e.getMessage());
