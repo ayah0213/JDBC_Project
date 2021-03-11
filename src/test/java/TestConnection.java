@@ -31,6 +31,7 @@ It also maintain a cursor to point to the row so data at that location can be ac
         jdbc: vendorNAme : driverame @YourHost:PORT:SID
         jdbc:oracle:thin@3.84.101.66:1521:xe
          */
+        // commentblabla
 
         // connecting to JDBC
         String URL = "jdbc:oracle:thin:@3.84.101.66:1521:xe";
