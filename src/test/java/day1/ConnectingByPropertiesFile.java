@@ -4,7 +4,7 @@ import utility.ConfigurationReader;
 
 import java.sql.*;
 
-public class connectingByPropertiesFile {
+public class ConnectingByPropertiesFile {
 
     public static void main(String[] args) throws SQLException {
 
