@@ -67,7 +67,7 @@ public class DB_Utility {
             if (con != null) con.close();
         } catch (SQLException e) {
             System.out.println("Error occurred while closing the Resources " + e.getMessage());
-            ;
+
         }
     }
 
@@ -224,7 +224,9 @@ public class DB_Utility {
 
             while (rs.next()) {
                 for (int colIndex = 1; colIndex <= columnCount; colIndex++) {
-                    System.out.print(rs.getString(colIndex) + "\t");
+
+                    //System.out.print(rs.getString(colIndex) + "\t");
+                    System.out.printf("%-25s", rs.getString(colIndex) );
                 }
                 System.out.println();
             }
@@ -238,7 +240,7 @@ public class DB_Utility {
 
 
     // 14 method Reset cursor move the cursor where it was beginning, to before First location
-    public static void resetCursor() {
+   private static void resetCursor() {
         try {
             rs.beforeFirst();
         } catch (SQLException e) {
