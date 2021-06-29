@@ -173,6 +173,12 @@ public class DB_Utility {
         return cellVAlue;
     }
 
+    // 17th method get the CEll value at First Row and First Column
+    public static String getFirstRowFirstColumn(){
+
+        return getCEllValue(1,1);
+    }
+
 // 11th method getting entire columnDAta as List according to column number
     // return list objects that contains all rows in that column
 

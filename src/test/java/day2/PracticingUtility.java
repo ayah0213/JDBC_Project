@@ -38,8 +38,6 @@ public class PracticingUtility {
         System.out.println("DB_Utility.getRowMap(1) =  \n\t"
                 + DB_Utility.getRowMap(1));
 
-        System.out.println("DB_Utility.getRowMapAsListOfMap() =  \n\t"
-                + DB_Utility.getRowMapAsListOfMap());
 
 
         DB_Utility.destroy();
